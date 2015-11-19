@@ -1,0 +1,104 @@
+{
+	"name": {
+		"message": "nope",
+		"description": "Name of the extension that appears on the Extensions page."
+	},
+	"description": {
+		"message": "Hyperlinks that attempt to mislead you will be kept from doing so.",
+		"description": "The description that appears on the Extensions page."
+	},
+	
+	"textdirection": {
+		"message": "direction: ltr;",
+		"description": "For HTML documents, specifies the value of the HTML tag's style attribute, to set the text direction."
+	},
+	
+	"title": {
+		"message": "nope",
+		"description": "Title of the warning page."
+	},
+	"iconalt": {
+		"message": "nope",
+		"description": "Alt text for the icon on the warning page."
+	},
+	"headLine": {
+		"message": "nope",
+		"description": "Header for the warning page."
+	},
+	
+	"text1": {
+		"message": "The link you were trying to follow was probably trying to mislead you.  The link's caption was",
+		"description": "Text on the warning page."
+	},
+	"text2": {
+		"message": "but the link tried to take you to",
+		"description": "Text on the warning page."
+	},
+	
+	"goto1": {
+		"message": "If you understand that visiting either site may harm your computer, ",
+		"description": "Option text."
+	},
+	
+	"gotohref1": {
+		"message": "proceed to ",
+		"description": "Option text."
+	},
+	
+	"gotohref2": {
+		"message": "",
+		"description": "Option text."
+	},
+	
+	"goto2": {
+		"message": " or ",
+		"description": "Option text."
+	},
+
+	"gototext1": {
+		"message": "proceed to ",
+		"description": "Option text."
+	},
+	
+	"gototext2": {
+		"message": "",
+		"description": "Option text."
+	},
+	
+	"goto3": {
+		"message": ".",
+		"description": "Option text."
+	},
+
+	"back_button": {
+		"message": "Go back",
+		"description": "Button on the warning page."
+	},
+	
+	"options1": {
+		"message": "Here are some more options:",
+		"description": "Text on the warning page."
+	},
+		
+	"navigate1": {
+		"message": "Use your bookmarks or a search engine to find the site the link claimed to be, without using the link itself.  If you were trying to visit the site to reactivate your account or some other related task you cannot figure out how to complete, it may not be necessary and any message asking you to do so may have been false.  You can try to contact the website administrative team to confirm this.",
+		"description": "Text on the warning page."
+	},
+	
+	"search1": {
+		"message": "Search the web for ",
+		"description": "Text on the warning page."
+	},
+	"search2": {
+		"message": "",
+		"description": "Text on the warning page."
+	},
+	"search3": {
+		"message": " or ",
+		"description": "Text on the warning page."
+	},
+	"search4": {
+		"message": " to determine if the link is an attempt at phishing.",
+		"description": "Text on the warning page."
+	}
+}

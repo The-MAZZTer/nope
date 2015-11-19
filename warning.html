@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html id="template_root" i18n-values="dir:textdirection">
+	<head>
+		<title i18n-content="title"></title>
+		<style type="text/css">
+			body {
+				background-color: #500;
+			  font-family: Helvetica, Arial, sans-serif;
+  			margin: 0px;
+			}
+			.background {
+  			position: absolute;
+  			width: 100%;
+  			height: 100%;
+			}
+			.cell {
+  			padding: 40px;
+			}
+			.box {
+  			width: 80%;
+  			background-color: white;
+  			color: black;
+  			font-size: 10pt;
+  			line-height: 16pt;
+  			text-align: left;
+  			padding: 20px;
+  			position: relative;
+  			-webkit-box-shadow: 3px 3px 8px #200;
+  			border-radius: 5px;
+			}
+			html[dir='rtl'] .box {
+  			text-align: right;
+			}
+			
+			.icon {
+  			position: absolute;
+			}
+			.title {
+  			margin: 0px 87px 0px;
+  			font-size: 18pt;
+			  margin-bottom: 6pt;
+  			font-weight: bold;
+  			color: #660000;
+			}
+			.main {
+  			margin: 0px 90px 0px;
+			}
+			.submission {
+  			margin: 15px 5px 15px 0px;
+  			padding: 0px;
+			}
+			input {
+  			margin: 0px;
+			}
+			.proceedbutton {
+			}
+			.helpbutton {
+  			float: right;
+			}
+			.example {
+  			margin: 30px 90px 0px;
+  			border-top: 1px solid #ccc;
+  			padding-top: 6px;
+			}
+			.moreinfotitle {
+  			margin-left: 5px;
+  			margin-right: 5px;
+			}
+			
+			.errorlist {
+  			background-color: white;
+  			color: black;
+  			font-size: 10pt;
+  			line-height: 16pt;
+  			text-align: left;
+			}
+			
+			.green {
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#83c260), color-stop(44%,#71b44c), color-stop(100%,#549d2c));
+				border: 1px solid #4c7336;
+				border-bottom: 1px solid #44692f;
+				border-radius: 5px;
+				-webkit-box-shadow: inset 0 1px 0 0 #a0d186, 0px 1px 2px rgba(0,0,0,0.2);
+				color: #fff;
+				font-family: arial, helvetica, sans-serif;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 1;
+				padding: 9px 20px 10.5px 20px;
+				text-align: center;
+				text-shadow: -1px -1px 0 #679949;
+				-webkit-font-smoothing: antialiased;
+				cursor:pointer;
+				text-decoration:none;
+				display:inline-block;
+			}
+
+			.green:hover, .green:focus {
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8bc968), color-stop(44%,#7bbc57), color-stop(100%,#4f9727)); /* webkit */
+				border: 1px solid #456a2f;
+				border-bottom: 1px solid #456a2f;
+				-webkit-box-shadow: inset 0 1px 0 0 #a0d186, 0px 1px 2px rgba(0,0,0,0.3);;
+			}
+
+			.green:active {
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#83c260), color-stop(44%,#71b44c), color-stop(100%,#549d2c)); /* webkit */
+				border: 1px solid #3e612a;
+				border-top:1px solid #4c7336;
+				border-bottom:1px solid #547b3f;
+				-webkit-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+			}
+
+			.green:focus {
+				border: 1px solid #000;
+			}
+
+			#expandee {
+				display: none;
+			}
+			#nopeplayerparent {
+				display: none;
+			}
+		</style>
+		<script type="text/javascript" src="scripts/pages.js"></script>
+		<script type="text/javascript" src="scripts/warning.js"></script>
+	</head>
+	<body>
+		<img src="images/ssl_roadblock_background.png" class="background"
+			alt="background">
+		<table width="100%" cellspacing="0" cellpadding="0">
+			<td class="cell" valign="middle" align="center">
+				<div class="box">
+					<div class="icon"><img
+						src="images/warning_icon.png" i18n-values="alt:iconalt"></div>
+					<div class="title" i18n-content="headLine"></div>
+					<div class="main" id="nopeplayerparent">
+						<iframe title="YouTube video player" class="youtube-player"
+							type="text/html" width="640" height="390" frameborder="0"
+							id="nopeplayer"></iframe>
+					</div>
+			<div class="main" i18n-content="text1"></div>
+			<div class="main" id="linktext1"></div>
+			<div class="main" i18n-content="text2"></div>
+			<div class="main" id="linkhref1"></div>
+			<div class="main">
+				<button i18n-content="back_button" class="green submission"></button>
+			</div>
+			<div class="main" i18n-content="options1"></div>
+			<div class="main">
+				<ul>
+					<li i18n-content="navigate1"></li>
+					<li><a id="searchlinktext"><span i18n-content="search1"></span><span
+						id="linktext2"></span><span i18n-content="search2"></a><span
+						i18n-content="search3"></span><a id="linkhref2"></a><span
+						i18n-content="search4"></span></li>
+					<li><span i18n-content="goto1"></span><a id="linktext4"><span
+						i18n-content="gototext1"></span><span id="linktext3"></span><span
+						i18n-content="gototext2"></span></a><span
+						i18n-content="goto2"></span><a id="linkhref4"><span
+						i18n-content="gotohref1"></span><span id="linkhref3"></span><span
+						i18n-content="gotohref2"></span></a><span
+						i18n-content="goto3"></span></li>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</td>
+</table>
+</body>
+</html>

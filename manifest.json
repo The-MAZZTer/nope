@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+  "name": "__MSG_name__",
+  "version": "1.1.4.7",
+  "description": "__MSG_description__",
+  "icons": {
+    "16": "images/16.png",
+    "32": "images/32.png",
+    "48": "images/48.png",
+    "64": "images/64.png",
+    "128": "images/128.png",
+    "256": "images/256.png"
+	},
+
+	"default_locale": "en",
+
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": ["scripts/inject.js"],
+		"all_frames": true
+	}]
+}
